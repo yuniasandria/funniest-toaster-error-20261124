@@ -7,7 +7,11 @@ Pure standard library; no third-party packages, no network.
 
 import os
 
-LINE = "E01: Slot 2 is haunted. Please use Slot 1."
+PART_A = "E01: Slot 2 is haunted. "
+PART_B = "Please use Slot 1."
+LINE = PART_A + PART_B
+assert LINE == "E01: Slot 2 is haunted. Please use Slot 1."
+assert 1 <= len(LINE) <= 120
 
 
 def main():
